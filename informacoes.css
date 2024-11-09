@@ -1,0 +1,112 @@
+:root {
+    --cor-coluna-esquerda: #71c98b; /* Cor da coluna esquerda */
+    --cor-coluna-direita: #e5e5e5; /* Cor da coluna direita */
+    --cor-logo: #00571a; /* Cor dos ícones */
+    --cor-cabecalho: #00571a; /* Cor dos títulos */
+    --cor-texto: #333333; /* Cor do texto principal */
+}
+
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 0;
+}
+
+/* Coluna esquerda */
+.coluna-esquerda {
+    color: white;
+    max-width: 200px;
+    padding: 20px;
+    background-color: var(--cor-coluna-esquerda);
+    border-right: 1px solid var(--cor-logo);
+
+    /* Estilos para centralizar o conteúdo verticalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Faz a coluna ocupar a altura total da tela */
+}
+
+.coluna-esquerda ul {
+    list-style: none;
+    padding: 0;
+}
+
+.coluna-esquerda li {
+    margin-bottom: 10px;
+}
+
+.coluna-esquerda a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--cor-logo);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+.coluna-esquerda a:hover {
+    background-color: var(--cor-coluna-esquerda);
+    color: black;
+    font-weight: 600;
+}
+
+.coluna-esquerda a iconify-icon {
+    margin-right: 10px;
+}
+
+/* Coluna direita */
+.coluna-direita {
+    flex-grow: 4;
+    background-color: var(--cor-coluna-direita);
+    padding: 30px;
+}
+
+.coluna-direita h1 {
+    font-size: 28px;
+    color: var(--cor-cabecalho);
+    margin-bottom: 20px;
+}
+
+.coluna-direita h2 {
+    font-size: 24px;
+    color: var(--cor-cabecalho);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.coluna-direita p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.coluna-direita ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.coluna-direita ul li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 5px;
+    list-style-type: disc;
+}
+
+/* Outros ajustes */
+img {
+    margin-bottom: 20px;
+}
